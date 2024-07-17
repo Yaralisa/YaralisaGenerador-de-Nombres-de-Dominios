@@ -6,23 +6,19 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-  console.log(Dominios);
-  Dominios();
+  generadorDominios();
 };
-function Dominios() {
+function generadorDominios() {
   let pronoun = ["the", "our"];
-  let adj = ["great", "big"];
+  let adjetive = ["great", "big"];
   let noun = ["jogger", "racoon"];
 
   for (let i = 0; i < pronoun.length; i++) {
-    for (let j = 0; j < adj.length; j++) {
+    for (let j = 0; j < adjetive.length; j++) {
       for (let k = 0; k < noun.length; k++) {
-        let domain = pronoun[i] + adj[j] + noun[k] + ".com";
+        let domain = pronoun[i] + adjetive[j] + noun[k] + ".com";
         console.log(domain);
-      }
+      
     }
   }
 }
-
